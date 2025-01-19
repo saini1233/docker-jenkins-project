@@ -1,8 +1,8 @@
 pipeline {
   agent any
   enivronment {
-    DOCKER_IMAGE=""
-    DOCKER_TAG=""
+    DOCKER_IMAGE="ubuntu"
+    DOCKER_TAG="javacode"
     WAR_FILE="/target/"
     TOMCAT_IMAGE="tomcat:latest"
   }
