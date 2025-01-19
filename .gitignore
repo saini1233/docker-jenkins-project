@@ -11,5 +11,4 @@ mvnw
 mvnw.cmd
 *.iml
 .vscode/
-*.tmp
 *.swp
