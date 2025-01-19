@@ -3,7 +3,7 @@ pipeline {
   enivronment {
     DOCKER_IMAGE="ubuntu"
     DOCKER_TAG="javacode"
-    WAR_FILE="/target/"
+    WAR_FILE="java-app.war"
     TOMCAT_IMAGE="tomcat:latest"
   }
   stages {
