@@ -1,1 +1,11 @@
+package com.example;
 
+public class HelloWorld {
+  private static String greetingMessage = "Hello, World!";
+  public static void main(String[] args) {
+    displayMessage();
+  }
+  public static void displayMessage() {
+    System.out.println(greetingMessage);
+  }
+}
