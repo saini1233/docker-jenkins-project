@@ -12,6 +12,13 @@ pipeline {
         git ''
       }
     }
+    stage('Build Docker Image') {
+      steps {
+        script {
+          sh 'mvn clean install -DskipTests'
+        }
+      }
+    }
     stage('Build Docker image') {
       steps {
         script {
