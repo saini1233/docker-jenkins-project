@@ -23,7 +23,7 @@ pipeline {
       steps {
         script {
           sshagent([dockerserver]) {
-            sh 'ssh -o StrictHostKeyCHecking=no ubuntu@54.83.105.94 "docker build -t $DOCKE_IMAGE:$DOCKER_TAG ."
+            sh 'ssh -o StrictHostKeyCHecking=no ubuntu@54.83.105.94 "docker build -t $DOCKER_IMAGE:$DOCKER_TAG ."
           }
         }
       }
