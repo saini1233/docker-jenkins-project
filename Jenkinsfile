@@ -9,9 +9,10 @@ pipeline {
   stages {
     stage('checkout code') {
       steps {
-        git 'https://github.com/saini1233/docker-jenkins-project.git'
+        git branch: 'main', url: 'https://github.com/saini1233/docker-jenkins-project.git'
       }
     }
+  }
     stage('Build Docker Image') {
       steps {
         script {
